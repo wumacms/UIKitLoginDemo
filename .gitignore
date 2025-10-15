@@ -2,13 +2,28 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## User settings
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
 xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
 
 ## Obj-C/Swift specific
 *.hmap
-
-## App packaging
 *.ipa
 *.dSYM.zip
 *.dSYM
@@ -24,12 +39,8 @@ playground.xcworkspace
 # Package.pins
 # Package.resolved
 # *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
-.build/
+# Xcode 15.3 and earlier
+# *.xcworkspace
 
 # CocoaPods
 #
@@ -38,9 +49,6 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
 
 # Carthage
 #
@@ -54,9 +62,168 @@ Carthage/Build/
 # It is recommended to not store the screenshots in the git repo.
 # Instead, use fastlane to re-generate the screenshots whenever they are needed.
 # For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
+# https://docs.fastlane.tools/actions/capture_screenshots/
 
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+# SwiftLint
+.swiftlint.yml
+
+# AppCode
+.idea/
+
+# OS X
+#
+.DS_Store
+
+# App specific
+*.xcuserstate
+project.xcworkspace
+
+# Local development files
+.env
+.env.local
+config.local.swift
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+logs/
+
+# Analytics
+analytics/
+
+# Crashlytics
+crashlytics.log
+
+# Backup files
+*.backup
+*.bak
+
+# Documentation
+docs/build/
+*.generated.md
+
+# Swift Package Manager generated files
+.swiftpm/
+Package.resolved
+
+# Xcode Cloud
+xcodecloud/
+
+# Previews
+Previews/
+
+# SwiftUI Previews cache
+*.swiftpm/
+
+# Local Swift package configurations
+.localized/
+
+# VSCode
+.vscode/
+
+# Temporary Swift files
+*.swiftdeps
+*.swiftmodule
+*.swiftdoc
+*.swiftdep
+
+# Precompiled headers
+*.pch
+
+# Asset catalog caches
+*.acc
+
+# Interface Builder
+*.nib
+*.storyboardc
+
+# Compilation artifacts
+*.o
+*.a
+
+# Profiling data
+*.gcda
+*.gcno
+
+# Index stores
+index-store/
+
+# Core Data
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Realm
+*.realm
+*.realm.lock
+*.realm.management
+*.realm.note
+
+# Firebase
+GoogleService-Info.plist
+
+# Fastlane
+fastlane/README.md
+fastlane/metadata/
+
+# Tuist
+.tuist-version
+.tuist-cache
+
+# App Thinning
+*.appthinning
+
+# On Demand Resources
+OnDemandResources/
+
+# App Installer
+*.ipa
+
+# Playgrounds data
+playgrounds-data/
+
+# Localization files
+*.lproj/localized.strings
+
+# Test results
+test_results/
+*.test_result
+
+# Code coverage
+*.gcov
+*.profdata
+
+# Package Manager cache
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/**
+
+# Xcode auto-generated schemes
+*.xcscheme
+
+# Xcode breakpoints
+*.xcbkptlist
+
+# Xcode UI tests
+DerivedData/Logs/Test/
+
+# Xcode build artifacts
+*.build/
+*.app
+*.framework
+*.dylib
+*.bundle
